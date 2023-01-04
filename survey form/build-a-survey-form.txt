@@ -1,0 +1,131 @@
+** start of undefined **
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Poppins:wght@400;600&family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for filling out this form to help improve our site.</p>
+      <form id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label">Name: <input id="name" type="text" name="name" placeholder="Enter Your Name" required /></label>
+          <label for="number" id="number-label">Age: <input id="number" type="number" name="age" min="13" max="130" placeholder="Enter Your Age (13+)" required/></label>
+          <label for="email" id="email-label">Email: <input id="email" type="email" name="email" placeholder="Enter Your Email" required/></label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown">What do you use the site for?
+            <select id="dropdown" name="dropdown">
+              <option value="">(select one)</option>
+              <option value="For keeping notes">For keeping notes</option>
+              <option value="A planner">A planner</option>
+              <option value="Both">Both</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>How did you hear about us?</legend>
+          <label for="youtube-ads"><input type="radio" name="referrer" id="youtube-ads" class="inline" value="Youtube"/>Youtube Ads</label>
+          <label for="google-ads"><input type="radio" name="referrer" id="google-ads" class="inline" value="google-ads" />Google Ads</label>
+          <label for="friend"><input type="radio" name="referrer" id="friend" class="inline" value="friend" />From a friend</label>
+          <label for="other"><input type="radio" name="referrer" id="other" class="inline" value="other" />Other</label>
+        </fieldset>
+        <fieldset>
+          <legend>Would you recommend our site to a friend?</legend>
+          <label for="yes"><input type="radio" name="recommendable" id="yes" class="inline" value="yes" />Yes</label>
+          <label for="probably"><input type="radio" name="recommendable" id="probably" class="inline" value="probably" />Probably</label>
+          <label for="not-sure"><input type="radio" name="recommendable" id="not-sure" class="inline" value="not-sure" />Not sure</label>
+          <label for="no"><input type="radio" name="recommendable" id="no" class="inline" value="no" />No</label>
+        </fieldset>
+        <fieldset>
+          <legend>What to improve?</legend>
+          <label for="improvement-area1"><input type="checkbox" id="improvement-area1" name="to-improve" value="calendar" class="inline" />Calendar</label>
+          <label for="improvement-area2"><input type="checkbox" id="improvement-area2" name="to-improve" value="notes" class="inline" />Notes</label>
+          <label for="improvement-area3"><input type="checkbox" id="improvement-area3" name="to-improve" value="reminder" class="inline" />Reminder</label>
+          <label for="improvement-area4"><input type="checkbox" id="improvement-area4" name="to-improve" value="tools" class="inline" />Tools</label>
+          <label for="improvement-area5"><input type="checkbox" id="improvement-area5" name="to-improve" value="other" class="inline" />Other</label>
+          <label for="comments">Any comments or suggestions?
+            <textarea id="comments" name="comments" rows="4"  placeholder="Enter your comments here..."></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit"/>
+      </form>
+    </div>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: #2C3333;
+  color: #E7F6F2;
+  font-size: 20px;
+}
+h1, p {
+  margin: .5em auto;
+  text-align: center;
+}
+p{
+  font-size: 16px;
+  font-style: italic;
+}
+form {
+  width: 70vw;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 1em 0 2em 0;
+}
+fieldset {
+  border: 2px solid #395B64;
+  padding: 1em;
+  margin: 1em 0;
+}
+label {
+  display: block;
+  margin: 1em 0;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  margin: .25em 0 0 0;
+  min-height: 2.25em;
+  padding: 0 5px;
+  background-color: #395B64;
+  border: #395B64;
+  color: #E7F6F2;
+}
+.inline{
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+input[type="submit"] {
+  background-color: rgb(165, 201, 202);
+  color: #395B64;
+  margin: 1em 0;
+  height: 2em;
+  font-size: 1.1rem;
+}
+input[type="submit"], 
+input[type="radio"], 
+input[type="checkbox"],
+select:hover {
+  cursor: pointer;
+}
+
+** end of undefined **
+
